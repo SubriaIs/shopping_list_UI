@@ -1,46 +1,144 @@
-# Getting Started with Create React App
+# Shopping List Frontend  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based frontend application for managing shopping lists. The application offers features like creating, editing, and sharing shopping lists, real-time notifications, user profiles, and an intuitive interface.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features  
 
-### `npm start`
+### User Account  
+- **Sign Up**  
+  - Create an account by entering your username, email, phone number, and password.  
+  - Press "JOIN" to complete the registration.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Login**  
+  - Log in using your registered email and password by clicking the "Login" button.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+### Shopping List Management  
+- **Create a Shopping List**  
+  - Add a new shopping list by clicking the "Create New" button. Provide a name and description.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **View All Shopping Lists**  
+  - Access all your shopping lists on the dashboard.  
+  - Use the search functionality to filter lists by name.  
 
-### `npm run build`
+- **Edit a Shopping List**  
+  - Click "MODIFY" to update list name, description, and product details.  
+  - Add/remove products, change product details (name, quantity, purchased status, unit), and manage shared members.  
+  - Switch between "EDIT MODE" and "VIEW MODE" for flexibility.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **View Specific Shopping List**  
+  - Access detailed list information, including creator, shared members, and product details.  
+  - Filter products by name/status or switch back to "EDIT MODE" for updates.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Delete a Shopping List**  
+  - Click "REMOVE" to delete a shopping list. Confirm deletion, and a success message will be shown.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### Sharing Shopping Lists  
+- **Share a Shopping List**  
+  - Share lists with registered users by selecting them from a dropdown menu while editing.  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Access Shared Shopping Lists**  
+  - Can view, manage or delete shared lists. it accessible on the dashboard.  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Profile  
+- **Profile Management**  
+  - View your details (username, email, phone number).  
+  - Update your password via the profile section.  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### Notifications  
+- **Real-Time Notifications**  
+  - Access notifications by clicking the bell icon to view updates on shared lists and activities.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Auto-Sync and Manual Refresh  
+- **Auto-Sync**  
+  - Automatically reload lists every 30 seconds for the latest updates.  
+
+- **Refresh Now**  
+  - Click "REFRESH NOW" to manually reload the page.  
+
+---
+
+### Logging Out  
+- **Logout**  
+  - Click the "Logout" button in the top-right corner to securely exit the application.  
+
+---
+
+## Installation  
+
+### Prerequisites  
+- **For Local Setup**  
+  - Node.js (v16+) and npm must be installed.  
+- **For Docker Deployment**  
+  - Docker installed on your machine.  
+
+---
+
+### Steps to Run Locally  (way 1)
+
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/SubriaIs/shopping_list_UI
+2. **Navigate to the project directory:**
+    ```bash
+    cd shopping_list_UI
+    ```
+
+3. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+4. **Start the application:**
+    ```bash
+    npm start
+    ```
+
+5. **Access the application at:**
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+### Docker Deployment (way 2)
+
+To run the application using Docker, follow these steps:
+
+1. **Pull the Docker image:**
+    ```bash
+    docker pull subriais/shopping_list_ui:latest
+    ```
+
+2. **Run the container:**
+    ```bash
+    docker run -d -p 3000:3000 subriais/shopping_list_ui:latest
+    ```
+
+---
+
+### Configuration
+
+- Ensure the backend is running before using the frontend.
+- Possible to clone the backend repository from:  
+   ```bash  
+   git clone https://github.com/SubriaIs/shopping_list
+- Update the **API base URL** in the `.env` file or the configuration file if needed:
+    ```bash
+    REACT_APP_API_BASE_URL=http://hostaddress:8082/v1
+    ```
+
+---
+
+## License
+
+This project is licensed under the MIT License.
