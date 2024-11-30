@@ -10,38 +10,38 @@ A React-based frontend application for managing shopping lists. The application 
 - **Sign Up**  
   - Create an account by entering your username, email, phone number, and password.  
   - Press "JOIN" to complete the registration.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Signup.png)
 - **Login**  
   - Log in using your registered email and password by clicking the "Login" button.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Login.png)
 ---
 
 ### Shopping List Management  
 - **Create a Shopping List**  
   - Add a new shopping list by clicking the "Create New" button. Provide a name and description.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Create_ShoppingList.png)
 - **View All Shopping Lists**  
   - Access all your shopping lists on the dashboard.  
   - Use the search functionality to filter lists by name.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/View_dashboard.png)
 - **Edit a Shopping List**  
   - Click "MODIFY" to update list name, description, and product details.  
   - Add/remove products, change product details (name, quantity, purchased status, unit), and manage shared members.  
   - Switch between "EDIT MODE" and "VIEW MODE" for flexibility.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Edit_ShoppingList.png)
 - **View Specific Shopping List**  
   - Access detailed list information, including creator, shared members, and product details.  
-  - Filter products by name/status or switch back to "EDIT MODE" for updates.  
-
+  - Filter products by name or switch back to "EDIT MODE" for updates.  
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/View_ShoppingList.png)
 - **Delete a Shopping List**  
   - Click "REMOVE" to delete a shopping list. Confirm deletion, and a success message will be shown.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Delete_ShoppingList.png)
 ---
 
 ### Sharing Shopping Lists  
 - **Share a Shopping List**  
   - Share lists with registered users by selecting them from a dropdown menu while editing.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Edit_ShoppingList.png)
 - **Access Shared Shopping Lists**  
   - Can view, manage or delete shared lists. it accessible on the dashboard.  
 
@@ -51,13 +51,13 @@ A React-based frontend application for managing shopping lists. The application 
 - **Profile Management**  
   - View your details (username, email, phone number).  
   - Update your password via the profile section.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Profile.png)
 ---
 
 ### Notifications  
 - **Real-Time Notifications**  
   - Access notifications by clicking the bell icon to view updates on shared lists and activities.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Notification.png)
 ---
 
 ### Auto-Sync and Manual Refresh  
@@ -66,13 +66,13 @@ A React-based frontend application for managing shopping lists. The application 
 
 - **Refresh Now**  
   - Click "REFRESH NOW" to manually reload the page.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/AutoSync.png)
 ---
 
 ### Logging Out  
 - **Logout**  
   - Click the "Logout" button in the top-right corner to securely exit the application.  
-
+![Shopping List App Screenshot](https://raw.githubusercontent.com/SubriaIs/shopping_list_UI/refs/heads/master/public/Logout.png)
 ---
 
 ## Installation  
